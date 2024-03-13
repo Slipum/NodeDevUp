@@ -1,6 +1,6 @@
 {
 	"name": "nodedevup",
-	"version": "1.0.4",
+	"version": "1.1.0",
 	"description": "A tool for automatically restarting Node.js applications when files change.",
 	"main": "index.js",
 	"bin": {
@@ -18,6 +18,7 @@
 	"author": "Your Name",
 	"license": "MIT",
 	"scripts": {
+		"devup": "nodedevup",
 		"start": "node index.js",
 		"test": "mocha --recursive",
 		"lint": "eslint . --ext .js,.ts",
@@ -25,6 +26,7 @@
 		"build": "tsc && node index.js"
 	},
 	"dependencies": {
+		"chalk": "^4.1.2",
 		"chokidar": "^3.5.2",
 		"minimist": "^1.2.5"
 	},
