@@ -1,6 +1,6 @@
 {
 	"name": "nodedevup",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "A tool for automatically restarting Node.js applications when files change.",
 	"main": "index.js",
 	"bin": {
