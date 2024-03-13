@@ -1,11 +1,22 @@
 {
 	"name": "nodedevup",
-	"version": "1.0.0",
+	"version": "1.0.3",
 	"description": "A tool for automatically restarting Node.js applications when files change.",
 	"main": "index.js",
 	"bin": {
 		"nodedevup": "index.js"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Slipum/NodeDevUp"
+	},
+	"keywords": [
+		"node",
+		"development",
+		"npm"
+	],
+	"author": "Your Name",
+	"license": "MIT",
 	"scripts": {
 		"start": "node index.js",
 		"test": "mocha --recursive",
