@@ -1,0 +1,27 @@
+{
+	"name": "nodedevup",
+	"version": "1.0.0",
+	"description": "A tool for automatically restarting Node.js applications when files change.",
+	"main": "index.js",
+	"bin": {
+		"nodedevup": "index.js"
+	},
+	"scripts": {
+		"start": "node index.js",
+		"test": "mocha --recursive",
+		"lint": "eslint . --ext .js,.ts",
+		"format": "prettier --write .",
+		"build": "tsc && node index.js"
+	},
+	"dependencies": {
+		"chokidar": "^3.5.2",
+		"minimist": "^1.2.5"
+	},
+	"devDependencies": {
+		"chai": "^4.3.4",
+		"eslint": "^8.12.0",
+		"mocha": "^9.2.0",
+		"prettier": "^2.7.1",
+		"typescript": "^4.7.4"
+	}
+}
